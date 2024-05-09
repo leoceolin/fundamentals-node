@@ -1,0 +1,23 @@
+{
+  "name": "bases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "dev-stream": "tsx watch streams/stream-http-server.ts",
+    "dev-fake-stream": "tsx watch streams/fake-upload-to-http-stream.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^20.12.7",
+    "node-fetch": "^3.3.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.7.2"
+  }
+}
